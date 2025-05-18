@@ -24,3 +24,8 @@ const items = document.querySelectorAll("body,.navbar,.navbar a,.toggle,.toggle-
 ball.addEventListener("click", function(){
     items.forEach((item) => item.classList.toggle("active"));
 });
+
+document.getElementById('toggle-menu').addEventListener('click', function () {
+    const menu = document.getElementById('dropdown-menu');
+    menu.classList.toggle('active');
+});
